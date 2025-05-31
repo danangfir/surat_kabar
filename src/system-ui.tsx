@@ -17,7 +17,7 @@ import {
   X
 } from 'lucide-react';
 
-export default function DanangSystemUI() {
+export default function SistemSuratPenyimpanan() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [activeTab, setActiveTab] = useState('dashboard');
   const [showModal, setShowModal] = useState(false);
@@ -25,7 +25,7 @@ export default function DanangSystemUI() {
   const menuItems = [
     { id: 'dashboard', icon: Home, label: 'Dashboard' },
     { id: 'users', icon: Users, label: 'Pengguna' },
-    { id: 'documents', icon: FileText, label: 'Dokumen' },
+    { id: 'documents', icon: FileText, label: 'Surat & Dokumen' },
     { id: 'reports', icon: BarChart3, label: 'Laporan' },
     { id: 'settings', icon: Settings, label: 'Pengaturan' }
   ];
@@ -394,7 +394,7 @@ export default function DanangSystemUI() {
             </div>
             <input
               type="text"
-              defaultValue="Sistem Danang"
+              defaultValue="Sistem Surat"
               className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
           </div>
@@ -405,7 +405,7 @@ export default function DanangSystemUI() {
             </div>
             <input
               type="email"
-              defaultValue="admin@danang-system.com"
+              defaultValue="admin@sistem-surat.com"
               className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
           </div>
@@ -501,12 +501,12 @@ export default function DanangSystemUI() {
         <div className="p-4 border-b border-gray-200">
           <div className="flex items-center space-x-3">
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">D</span>
+              <span className="text-white font-bold text-sm">S</span>
             </div>
             {sidebarOpen && (
               <div>
-                <h1 className="text-lg font-bold text-gray-900">Sistem Danang</h1>
-                <p className="text-xs text-gray-600">Management System</p>
+                <h1 className="text-lg font-bold text-gray-900">Sistem Surat</h1>
+                <p className="text-xs text-gray-600">Penyimpanan & Manajemen</p>
               </div>
             )}
           </div>
